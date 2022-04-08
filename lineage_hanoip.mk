@@ -32,8 +32,9 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 PRODUCT_NAME := lineage_hanoip
 PRODUCT_DEVICE := hanoip
 PRODUCT_BRAND := motorola
-PRODUCT_MODEL := moto g(60)
+PRODUCT_MODEL := moto g(40)
 PRODUCT_MANUFACTURER := motorola
+DEVICE_MAINTAINER := The Whimsical Kid(Lenka-k)
 
 PRODUCT_AAPT_CONFIG := xxxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
