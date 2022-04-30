@@ -7,7 +7,7 @@ Basic   | Spec Sheet
 CPU     | Octa-core (2x2.30 GHz Kryo 470 Gold & 6x1.8 GHz Kryo 470 Silver)
 CHIPSET | Qualcomm sm6150 Snapdragon 732G
 GPU     | Adreno 618
-Memory  | 4 / 6GB
+Memory  | 4 / 6 GB
 Shipped Android Version | 11
 Storage | 64 / 128 GB
 Battery | 6000 mAh
