@@ -34,7 +34,8 @@ PRODUCT_DEVICE := hanoip
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := moto g(40)
 PRODUCT_MANUFACTURER := motorola
-DEVICE_MAINTAINER := The Whimsical Kid_(Lenka-k)
+DEVICE_MAINTAINER := The Whimsical Kid (Lenka-k)
+MAINTAINER_QUOTE := Life is a Serenade & We will not grow old..
 
 PRODUCT_AAPT_CONFIG := xxxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
