@@ -18,10 +18,6 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# All components inherited here go to system_ext image
-$(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_system_ext.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
-
 # Inherit from hanoip device
 $(call inherit-product, device/motorola/hanoip/device.mk)
 
@@ -41,13 +37,13 @@ PRODUCT_AAPT_CONFIG := xxxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 2460
+TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
 # Build info
-BUILD_FINGERPRINT := "motorola/hanoip_retailnq/hanoip:11/RRIS31.Q1-42-51-12-1/01c61:user/release-keys"
+BUILD_FINGERPRINT := "motorola/hanoip_retail/hanoip:11/RRI31.Q1-42-51-8/5f646:user/release-keys"
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=hanoip_retail \
-    PRIVATE_BUILD_DESC="hanoip_retailnq-user 11 RRIS31.Q1-42-51-12-1 01c61 release-keys"
+    PRIVATE_BUILD_DESC="hanoip_retail-user 11 RRI31.Q1-42-51-8 5f646 release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
