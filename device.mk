@@ -98,8 +98,15 @@ PRODUCT_PACKAGES += \
     init.oem.fingerprint.sh \
     init.oem.fingerprint2.sh
 
+# Use the default path if fstab.qcom is available in your device tree, otherwise you need to specify the path to the fstab.qcom
+# In my case path is =
+# device/motorola/sm6150-common/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom
+
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom
+    device/motorola/sm6150-common/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom
+    
+# This is the default path to fstab.qcom
+#    $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom
     
 PRODUCT_PACKAGES += \
     disable_configstore
