@@ -53,6 +53,14 @@ PRODUCT_COPY_FILES += \
 # Display
 PRODUCT_PACKAGES += \
     SettingsOverlayRefreshRate
+    
+# Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0.vendor
+    
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@4.1.vendor
 
 # Power
 PRODUCT_COPY_FILES += \
@@ -105,12 +113,12 @@ PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.hanoip
     
 # Vibrator
-# $(call inherit-product, vendor/qcom/opensource/vibrator/vibrator-vendor-product.mk)
+ $(call inherit-product, vendor/qcom/opensource/vibrator/vibrator-vendor-product.mk)
 
 # vndservicemanager has been removed from API30 devices (aosp/1235751)
 # but we still need it for display services.
-# PRODUCT_PACKAGES += \
-#    vndservicemanager
+PRODUCT_PACKAGES += \
+    vndservicemanager
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
