@@ -54,6 +54,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     SettingsOverlayRefreshRate
     
+# Fingerprint
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.1.vendor
+    
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor
